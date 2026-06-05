@@ -30,6 +30,7 @@
       try {
         var body = new URLSearchParams();
         body.append("form-name", "Quote Request");
+        body.append("business_email", "info@eastaucklandwindscreens.co.nz");
         ["name", "phone", "email", "vehicle", "glass", "insurance", "message"].forEach(function (k) {
           if (args[k]) body.append(k, args[k]);
         });
